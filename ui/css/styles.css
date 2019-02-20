@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    zoom: 1;
+}
+
+body {
+    /*background: #fffefc;
+    background: rgba(221, 221, 221, .4);*/
+    background: white;
+    color: #222023;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+}
+@media all and (max-width: 600px) {
+body { border-bottom: 0; }
+}
+    .irl {
+        background: rgba(255, 255, 255, 1.0);
+        /* border-bottom: .5px solid #787276; */
+        height: 24px;
+        left: 0;
+        line-height: 24px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+    }
+        .irl > div {
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+            max-width: 1000px;
+        }
+        .irl div > a {
+            color: #787276;
+            font-size: 12px;
+            text-decoration: none;
+        }
+        .irl div > a:first-child {
+            float: left;
+        }
+        .irl div > a:last-child {
+            float: right;
+        }
+    .wrapper-photo {
+        line-height: 1em;
+        margin-top: -80px;
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 700px;
+        overflow: hidden;
+        position: relative;
+        z-index: 5;
+    }
+        .wrapper-photo img {
+            display: block;
+            /* margin-right: -15%;
+            margin-left: -15%; */
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1000px;
+            /* width: 130%; */
+        }
+        .hire {
+            width: 100%;
+        }
+        .wrapper-photo > .hire {
+            bottom: 0;
+            height: 60px;
+            left: 0;
+            position: absolute;
+            transition: height .25s ease-in-out;
+            -moz-transition: height .25s ease-in-out;
+            -webkit-transition: height .25s ease-in-out;
+        }
+            .hire > a {
+                background: white;
+                background: rgba(255, 255, 255, .9);
+                background: #0074d9;
+                display: block;
+                height: 60px;
+                margin-right: auto;
+                margin-left: auto;
+                position: relative;
+                max-width: 910px;
+                text-align: center;
+                width: 100%;
+            }
+            .wrapper-photo > .hire a {
+                transition: height .25s ease-in-out;
+                -moz-transition: height .25s ease-in-out;
+                -webkit-transition: height .25s ease-in-out;
+            }
+                .hire > a > p {
+                    color: white;
+                    font-size: 20px;
+                    font-weight: bold;
+                    line-height: 60px;
+                    margin-bottom: 0;
+                }
+                .hire > a > span {
+                    background-color: white;
+                    border: 1px solid white;
+                    border-radius: 6px;
+                    color: #0074d9;
+                    display: inline-block;
+                    font-weight: bold;
+                    height: 36px;
+                    line-height: 1em;
+                    padding-top: 10px;
+                    padding-right: 20px;
+                    padding-left: 20px;
+                    position: absolute;
+                    right: 70px;
+                    top: 12px;
+                    transition: all .075s ease-in-out;
+                    -moz-transition: all .075s ease-in-out;
+                    -webkit-transition: all .075s ease-in-out;
+                }
+                .wrapper-photo > .hire:hover,
+                .wrapper-photo > .hire:hover > a {
+                    height: 66px;
+                }
+                .hire > a:hover > span {
+                    border: 1px solid #2c3e4b;
+                    color: #2c3e4b;
+                }
+@media all and (min-width: 1024px) {
+    .wrapper-photo {
+        /* margin-top: -150px; */
+        max-height: 700px;
+    }
+}
+@media all and (min-width: 1440px) {
+    .wrapper-photo {
+        /* margin-top: -200px; */
+        max-height: 800px;
+    }
+}
+    .wrapper-content {
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 40px;
+        padding-right: 70px;
+        padding-bottom: 28px;
+        padding-left: 60px;
+        max-width: 990px;
+        z-index: 1;
+    }
+@media all and (max-width: 990px) {
+    .irl {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+        .irl > div {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    .wrapper-photo > .hire,
+    .wrapper-photo > .hire:hover,
+    .wrapper-photo > .hire a,
+    .wrapper-photo > .hire a:hover,
+    .hire a {
+        height: auto;
+    }
+    .hire > a {
+        padding-top: 20px;
+        padding-right: 180px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        text-align: left;
+    }
+    .hire > a > p {
+        line-height: 1.375em;
+    }
+    .hire > a > span {
+        right: 50px;
+        top: 16px;
+    }
+    .wrapper-content {
+        padding-top: 30px;
+        padding-right: 40px;
+        padding-bottom: 28px;
+        padding-left: 40px;
+    }
+}
+@media all and (max-width: 600px) {
+    .irl {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .wrapper-photo {
+        margin-top: -50px;
+    }
+        .wrapper-photo img {
+            margin-right: -25%;
+            margin-left: -25%;
+            width: 150%;
+        }
+    .hire > a {
+        padding-right: 140px;
+        padding-left: 16px;
+    }
+    .hire > a > p {
+        font-size: 18px;
+    }
+    .hire > a > span {
+        font-size: 14px;
+        padding-right: 10px;
+        padding-left: 10px;
+        right: 16px;
+        top: 16px;
+    }
+    .wrapper-content {
+        padding-right: 16px;
+        padding-bottom: 28px;
+        padding-left: 16px;
+    }
+}
+    .wrapper-content > .tags {
+        margin-bottom: 18px;
+    }
+    .tag,
+    .tag-inline {
+        background: #2c3e4b;
+        border: 1px solid #2c3e4b;
+        border-radius: 4px;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 16px;
+        margin-right: 8px;
+        margin-bottom: 12px;
+        padding-top: 4px;
+        padding-right: 9px;
+        padding-bottom: 2px;
+        padding-left: 9px;
+    }
+    .tag-inline {
+        background: #dddddd;
+        border: 0;
+        color: #222023;
+        display: inline;
+        font-size: 15px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        padding-top: 1px;
+        padding-right: 6px;
+        padding-bottom: 1px;
+        padding-left: 6px;
+        white-space: nowrap;
+    }
+    .bull {
+        color: #59788d;
+    }
+    a {
+        color: #0074d9;
+        text-decoration: none;
+
+        transition: all .15s ease-in-out;
+        -moz-transition: all .15s ease-in-out;
+        -webkit-transition: all .15s ease-in-out;
+    }
+        a:hover {
+            color: #2c3e4b;
+        }
+    a.tag {
+        background: #0074d9;
+        border: 1px solid #0074d9;
+        color: #ffffff;
+
+        transition: all .15s ease-in-out;
+        -moz-transition: all .15s ease-in-out;
+        -webkit-transition: all .15s ease-in-out;
+    }
+        a.tag:hover {
+            border: 1px solid #2c3e4b;
+            color: #2c3e4b;
+        }
+    p, li {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    .intro {
+        margin-bottom: 40px;
+    }
+    .biz,
+    .pubs {
+        border-bottom: 1px #dddddd solid;
+        margin-bottom: 40px;
+        padding-bottom: 36px;
+    }
+    .pubs {
+        padding-bottom: 28px;
+    }
+        .biz .tags {
+            padding-top: 24px;
+        }
+    h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+        h1 > span,
+        h2 span {
+            font-size: 14px;
+            font-weight: normal;
+            float: right;
+        }
+    span.title {
+        display: block;
+        font-weight: bold;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+        p.pitch {}
+    h3 {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+@media all and (max-width: 600px) {
+    p, li {
+        font-size: 14px;
+    }
+        .tag {
+            margin-right: 4px;
+            margin-bottom: 8px;
+        }
+        .tag-inline {
+            font-size: 13px;
+        }
+    ul {
+        list-style-position: inside;
+        padding-left: 0;
+    }
+        li {
+            margin-left: 0;
+            padding-left: 0;
+            text-indent: 0;
+        }
+    h1 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+        h1 > span,
+        h2 span {
+            display: block;
+            float: none;
+            font-size: 12px;
+        }
+    span.title,
+    h3 {
+        font-size: 14px;
+    }
+    .biz {
+        padding-bottom: 38px;
+    }
+    .pubs {
+        padding-bottom: 28px;
+    }
+}
+    .testimonial {
+        padding-right: 40px;
+        padding-left: 0px;
+    }
+        .testimonial blockquote p {
+            color: #4d4c5d;
+            font-family: Georgia, serif;
+            font-size: 16px;
+            font-style: italic;
+            padding-left: 12px;
+            position: relative;
+        }
+            .testimonial blockquote p > span {
+                left: 0;
+                position: absolute;
+                top: 0;
+            }
+        .testimonial .source {
+            color: #4d4c5d;
+            font-size: 14px;
+            text-align: right;
+        }
+@media all and (max-width: 600px) {
+    .testimonial {
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+        .testimonial blockquote p {
+            font-size: 14px;
+            padding-left: 10px;
+        }
+}
+    .pubs h2 {
+        padding-top: 20px;
+    }
+
+    .history p,
+    .content p {
+        margin-bottom: 24px;
+    }
+    .history ul,
+    .content ul {
+        padding-bottom: 12px;
+    }
+    .code {
+        font-family: monospace;
+    }
+
+abbr {
+    text-decoration: none;
+}

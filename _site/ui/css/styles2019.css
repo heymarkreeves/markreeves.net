@@ -1,0 +1,68 @@
+.parallax-mjr {
+    background-image: url('/ui/img/mjrsq.jpg');
+    background-position: top center;
+    background-size: 100% auto;
+    height: auto;
+    padding-top: 300px;
+    padding-bottom: 20px;
+}
+    .parallax-mjr .wrapper-content {
+        background: white;
+        max-width: 980px;
+        padding-top: 40px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+    }
+@media (hover: hover) {
+    .parallax-mjr {
+        background-attachment: scroll;
+    }
+}
+@media screen and (min-width: 400px) {
+    .parallax-mjr {
+        height: auto;
+        padding-top: 400px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .parallax-mjr {
+        padding-top: 600px;
+    }
+}
+@media screen and (min-width: 900px) {
+    .parallax-mjr {
+        background-attachment: fixed;
+        background-image: url('/ui/img/mjr1600.jpg');
+        background-size: cover;
+        height: auto;
+    }
+    .parallax-mjr .wrapper-content {
+        padding-top: 60px;
+        padding-right: 60px;
+        padding-bottom: 60px;
+        padding-left: 60px;
+        box-shadow:
+            0px 4px 4px -4px rgba(0, 0, 0, .375),
+            0px -4px 4px -4px rgba(0, 0, 0, .375);
+    }
+}
+@media screen and (min-width: 1280px) {
+    .parallax-mjr {
+        height: auto;
+    }
+}
+
+.pubs {
+    margin-top: 40px;
+}
+.pubs h1 {
+    font-size: 20px; font-size: 1.25rem;
+    font-weight: bold;
+}
+.pubs p {
+    margin-top: 0;
+}
+.pubs article {
+    margin-top: 2em;
+}
