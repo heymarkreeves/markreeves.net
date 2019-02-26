@@ -34,7 +34,8 @@
     .parallax-mjr {
         background-attachment: fixed;
         background-image: url('/ui/img/mjr1600.jpg');
-        background-size: cover;
+        /*background-size: cover;*/
+        background-size: 120% auto;
         height: auto;
     }
     .parallax-mjr .wrapper-content {
@@ -50,6 +51,14 @@
 @media screen and (min-width: 1280px) {
     .parallax-mjr {
         height: auto;
+        background-position: top center;
+        background-size: 120% auto;
+    }
+}
+@media screen and (min-height: 1200px) {
+    .parallax-mjr {
+        background-position: center center;
+        background-size: cover;
     }
 }
 
